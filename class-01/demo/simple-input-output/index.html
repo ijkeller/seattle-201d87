@@ -1,33 +1,63 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <title>Class 1 code demo!!!</title>
-      <style>
-          li{
-              color: red;
-          }
-      </style>
-  </head>
+<head>
+  <title>Class 1 code demo!!!</title>
+  <style>
+    h1 {
+      color: #fffdd0;
+      background-color: #323232;
+    }
 
-  <body>
-    <h1>Hi, let's learn about semantic html!!!</h1>
-    <p>This is a paragraph tag. paragraphs are used to hold a body of text.</p>
-    <ul>
-      <li style="color: green">I Organize lists of information with unordered or ordered lists</li>
-      <li>List items are used to store the information in a list</li>
-    </ul>
+    div {
+      box-sizing: border-box;
+      box-shadow: inset 0 0 0 0 #323232;
+      width: 100vw;
+      height: 100%;
+    }
 
-    <script>
-      let user = prompt('What is your name?');
-      console.log('The user\'s name is ' + user)
+    div:hover {
+      box-shadow: inset 100px 0 0 0 #323232;
+    }
+  </style>
+</head>
 
-      let color = prompt('What is your favorite color?');
-      console.log('Your favorite color is: ' + color);
+<body>
+  <header>
 
-      alert('Hi there, ' + user + '. Your favorite color is ' + color);
+  </header>
+  <main>
+    <h1>Class 1 Lab</h1>
+    <div style="border: dashed 2px #323232; border-radius: 5px; padding: 5px;">
+      <p style="color: yellow; background-color: blue;">What is your name?</p>
+      <p style="color: white; background-color: green;">What's your favorite physical feature?</p>
+      <p style="color: red; background-color: black;">What are you drinking?</p>
+      <p style="color: orange; background-color: brown;">What is your age?</p>
+    </div>
+  </main>
+  <footer>
 
-    </script>
+  </footer>
+  <script>
 
-  </body>
+    let user = prompt('What is your name?');
+    console.log(`user: ${user}`)
+    alert(`Hello, ${user}`)
+
+    let feature = prompt("What's your favorite physical feature?");
+    console.log(`feature: ${feature}`)
+    alert(`Hello, ${user}. I love your ${feature}!`)
+
+    let drink = prompt('What are you drinking?');
+    console.log(`drink: ${drink}`)
+    alert(`Hello, ${user}. I love your ${feature}!  I hope you're enjoying that cup of ${drink}.`)
+
+    let age = prompt('What is your age?');
+    console.log(`age: ${age}`)
+    alert(`Hello, ${user}. I love your ${feature}! You look great for ${age}!  I hope you're enjoying that cup of ${drink}.`)
+
+  </script>
+
+</body>
+
 </html>
